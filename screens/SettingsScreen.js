@@ -1,17 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import CustomModal from '../components/CustomModal';
-import CustomRadioButton from '../components/CustomRadioButton';
+import CustomLoader from '../components/CustomLoader';
 
-export default function HomeScreen() {
+export default function SettingsScreen() {
   return (
     <View style={styles.container}>
-      <Text>HomeScreen</Text>
-      <CustomModal 
-        title="Show recipes"
-        text="Here is a list of all the recipes:"
-      />
-      <CustomRadioButton />
+      <Text>SettingsScreen</Text>
+      <CustomLoader size="small" color="blue"/>
+      <CustomLoader size="large" color="magenta"/>
+      <CustomLoader size={100} color="green"/>
     </View>
   );
 }
