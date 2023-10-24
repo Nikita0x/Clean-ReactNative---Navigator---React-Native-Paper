@@ -7,6 +7,7 @@ import AspirationScreen from '../screens/DryerScreen/AspirationScreen';
 import LoadScreen from '../screens/DryerScreen/LoadScreen';
 import UnloadScreen from '../screens/DryerScreen/UnloadScreen';
 import RecuperationScreen from '../screens/DryerScreen/RecuperationScreen';
+import AccountScreen from "../screens/HomeScreen/AccountScreen"
 
 const Stack = createStackNavigator();
 
@@ -22,6 +23,9 @@ const AppNavigator = () => {
       <Stack.Screen name="Recuperation" component={RecuperationScreen} />
       <Stack.Screen name="Unload" component={UnloadScreen} />
       <Stack.Screen name="Load" component={LoadScreen} />
+
+      <Stack.Screen name="Account" component={AccountScreen} />
+
 
       
     </Stack.Navigator>
